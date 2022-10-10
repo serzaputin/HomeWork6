@@ -27,15 +27,12 @@ public class Main {
         }
 
         System.out.println("Задание 3");
-        int year=2021;
-        switch (year) {
-            case 1:
-                System.out.println("");
-                break;
-            case 2:
-                System.out.println("");
-                break;
-            case 3:
+        int year=343;
+
+        if (year%4==0&&year%100!=0||year%400==0) {
+            System.out.println(year+" Является високосным");
+        }else{
+            System.out.println(year+" Не является високосным");
         }
 
         System.out.println("Задание 4");
