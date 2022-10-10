@@ -37,13 +37,16 @@ public class Main {
 
         System.out.println("Задание 4");
         int deliveryDistanse=95;
-        if (deliveryDistanse<=20) {
-            System.out.println("Доставка в пределах 20 км занимает 1 день");
-        } else if (deliveryDistanse>21&&deliveryDistanse<=60) {
-            System.out.println("Доставка в пределах от 20 км до 60 км доставка занимает два дня");
-        } else if (deliveryDistanse>60&&deliveryDistanse<=100) {
-            System.out.println("Доставка в пределах 60 км до 100 км доставка занимает три дня");
+        int deliveryDays=1;
+
+        if (deliveryDistanse>20) {
+            deliveryDays++;
+        } if (deliveryDistanse>40) {
+            deliveryDays++;
+        } if (deliveryDistanse>60) {
+            deliveryDays++;
         }
+        System.out.println("Потребуется дней "+deliveryDays);
 
 
         System.out.println("Задание 5");
